@@ -316,9 +316,11 @@ HEADER / ABOUT US ↓
     justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
+    width: calc(100%/3);
+}
 }
 
-.features .row__narrow {
+.features__row--narrow {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -347,13 +349,7 @@ HEADER / ABOUT US ↓
     width: 24px;
     height: 24px;
 }
-.services {
-    display: flex;
-    flex-wrap: wrap;
-    width: calc(100%/3);
-}
-
-.services__description{
+.features__description{
     display: flex;
     flex-direction: column;
 }
