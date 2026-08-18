@@ -199,8 +199,6 @@ nav {
 .nav__links {
     display: none;
 }
-v
-
 .menu {
     position: fixed;
     top: 0;
@@ -337,7 +335,8 @@ HEADER / ABOUT US ↓
     border: 1px solid #e5e7eb;
     border-radius: 500px;
 }
-.feature__para{
+
+.feature__para {
     margin-top: 16px;
     font-size: 16px;
     max-width: calc(634px/3);
@@ -345,13 +344,16 @@ HEADER / ABOUT US ↓
     line-height: 2;
     font-weight: 500;
 }
-.feature__img{
-    width: 24px;
-    height: 24px;
+.features__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
 }
-.features__description{
-    display: flex;
-    flex-direction: column;
+.feature__row {
+  display: flex;
+  align-items: flex-start;
+  padding: 20px;
 }
 
 
