@@ -307,26 +307,14 @@ HEADER / ABOUT US ↓
 
 
 /* FEATURES ↓ */
-
-.features {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
-    width: calc(100%/3);
+.feature__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
 }
-}
-
-.features__row--narrow {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.feature__row {
-    display: flex;
-    align-items: flex-start;
-    padding: block;
+.feature {
+  width: calc(100% / 2);
 }
 
 .feature__img--wrapper {
@@ -339,25 +327,16 @@ HEADER / ABOUT US ↓
 .feature__para {
     margin-top: 16px;
     font-size: 16px;
-    max-width: calc(634px/3);
     color: rgb(124, 139, 161);
     line-height: 2;
     font-weight: 500;
 }
-.features__wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 1200px;
-  margin: 0 auto;
-}
+
 .feature__row {
   display: flex;
   align-items: flex-start;
   padding: 20px;
 }
-
-
-/* 
 
 QUALITY WORK ↓
 
