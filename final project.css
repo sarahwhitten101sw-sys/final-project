@@ -564,6 +564,28 @@ HEADER / ABOUT US ↓
   width: 50%;
 }
 
+#quality .row {
+  align-items: center;
+  gap: 32px;
+}
+
+#quality .quality__description,
+#quality .quality__img--wrapper {
+  flex: 1 1 0;
+  width: calc(50% - 16px);
+  min-width: 0;
+}
+
+#quality .quality__img--wrapper {
+  margin: 0;
+}
+
+#quality .quality__img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 #quality .section__tag {
   margin-bottom: 4px;
 }
@@ -791,6 +813,31 @@ VALUES ↓
   margin: 0;
   font-size: 14px;
   line-height: 1.6;
+}
+
+#values .btn__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 28px;
+  border: 0;
+  border-radius: 999px;
+  background: #2563eb;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 180ms ease, transform 180ms ease;
+}
+
+#values .btn__button:hover {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+#values .btn__button:focus-visible {
+  outline: 3px solid rgba(37, 99, 235, 0.3);
+  outline-offset: 3px;
 }
      
 
@@ -1346,6 +1393,17 @@ MOBILE RESPONSIVENESS ↓
       padding-left: 0;
     }
 
+    #quality .row {
+      flex-direction: column;
+      gap: 32px;
+    }
+
+    #quality .quality__description,
+    #quality .quality__img--wrapper {
+      width: 100%;
+      flex-basis: auto;
+    }
+
     .start__row {
       flex-direction: column;
       gap: 24px;
@@ -1826,4 +1884,24 @@ MOBILE RESPONSIVENESS ↓
 
 #pricing .plan:nth-child(3) .plan__button:hover {
   background: #c83f3f;
+}
+
+/* Blue Sign Up call-to-action in the main navigation */
+.nav__link--primary,
+.menu__link--primary {
+  padding: 12px 24px;
+  border: 0;
+  border-radius: 999px;
+  background: #2563eb;
+  color: #fff;
+  font-weight: 700;
+  transition: background-color 180ms ease, transform 180ms ease;
+}
+
+.nav__link--primary:hover,
+.menu__link--primary:hover {
+  border: 0;
+  background: #1d4ed8;
+  color: #fff;
+  transform: translateY(-1px);
 }
