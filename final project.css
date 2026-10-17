@@ -104,10 +104,18 @@ svg:not(:root) {
   margin-inline-end: 40px;
   unicode-bidi: isolate;
 }
-.img {
+.header__img {
   width: block;
   overflow-clip-margin: content-box;
   overflow: clip;
+}
+.header__img--wrapper{
+  width: 100%;
+}
+
+.header__description {
+    width: 100%;
+    max-width: 480px;
 }
 
 :root {
@@ -239,6 +247,7 @@ NAVBAR ↓
 .nav__logo {
   display: flex;
   align-items: center;
+  gap: 12px;
 /* 
 
 NAVBAR LOGO ↓
@@ -1659,22 +1668,23 @@ MOBILE RESPONSIVENESS ↓
 
 #pricing .plans {
   align-items: stretch;
-  gap: 24px;
-  margin-top: 20px;
+  gap: 32px;
+  margin-top: 32px;
   isolation: isolate;
   z-index: 1;
 }
 
 #pricing .row {
   position: relative;
-  padding-bottom: 180px;
+  padding-bottom: 72px;
 }
 
 #pricing .plan {
   flex: 1 1 0;
   max-width: none;
-  margin: 32px 0 0;
-  padding: 32px 24px 16px;
+  min-height: 520px;
+  margin: 36px 0 0;
+  padding: 40px 32px 24px;
   overflow: hidden;
   border: 1px solid #e6eaf0;
   border-radius: 20px;
@@ -1710,7 +1720,7 @@ MOBILE RESPONSIVENESS ↓
 }
 
 #pricing .plan__top {
-  padding: 8px 0 24px;
+  padding: 12px 0 32px;
 }
 
 #pricing .plan__name {
@@ -1720,8 +1730,8 @@ MOBILE RESPONSIVENESS ↓
 }
 
 #pricing .plan__price {
-  margin: 8px 0;
-  font-size: 40px;
+  margin: 12px 0;
+  font-size: 44px;
   color: #243e63;
 }
 
@@ -1732,24 +1742,26 @@ MOBILE RESPONSIVENESS ↓
 #pricing .plan__middle {
   flex: 1;
   margin: 0;
-  padding: 24px 0;
+  padding: 30px 0;
   border-top: 1px solid #e7eaf0;
   border-bottom: 1px solid #e7eaf0;
 }
 
 #pricing .plan__target {
-  margin-bottom: 12px;
+  margin-bottom: 20px;
   font-weight: 700;
+  line-height: 1.6;
 }
 
 #pricing .plan__feature {
-  margin: 10px 0;
+  margin: 16px 0;
   color: #718096;
   font-size: 15px;
+  line-height: 1.6;
 }
 
 #pricing .plan__bottom {
-  padding: 24px 0 8px;
+  padding: 32px 0 8px;
 }
 
 #pricing .plan__button {
@@ -1791,18 +1803,19 @@ MOBILE RESPONSIVENESS ↓
 
 @media (max-width: 1024px) {
   #pricing .row {
-    padding-bottom: 140px;
+    padding-bottom: 60px;
   }
 
   #pricing .plans {
     flex-direction: column;
     align-items: center;
-    gap: 12px;
+    gap: 20px;
   }
 
   #pricing .plan {
     width: min(100%, 28rem);
-    margin: 20px 0 0;
+    min-height: 500px;
+    margin: 12px 0 0;
   }
 
   #pricing .plan:nth-child(2) {
@@ -1816,6 +1829,7 @@ MOBILE RESPONSIVENESS ↓
   }
 
   #pricing .plan {
+    min-height: 480px;
     padding-right: 20px;
     padding-left: 20px;
   }
@@ -1828,7 +1842,7 @@ MOBILE RESPONSIVENESS ↓
   }
 
   #pricing .row {
-    padding-bottom: 120px;
+    padding-bottom: 48px;
   }
 }
 
